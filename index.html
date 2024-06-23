@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/lite-yt-embed.css" />
+    <script src="src/lite-yt-embed.js"></script>
 </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-primary">
@@ -117,7 +119,7 @@
   <section class="row flex-md-row-reverse py-5">
     <div class="col-md-5">
       <div class="ratio ratio-16x9 mb-4 w-100">
-        <iframe class="mb-4" src="https://www.youtube.com/embed/JcLz5d3xcTA?si=BabL4hZD1rvbvu_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <lite-youtube class="mb-4" videoid="JcLz5d3xcTA" playlabel="Play: All-Size Adventure"></lite-youtube>
       </div>
     </div>
     <div class="col-md-7">
@@ -130,7 +132,7 @@
   <section class="row flex-md-row-reverse py-5">
     <div class="col-md-5">
       <div class="ratio ratio-16x9 mb-4 w-100">
-        <iframe class="mb-4" src="https://www.youtube.com/embed/saOOtACCLOM?si=n-IP4I7aTGJQtAix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <lite-youtube class="mb-4" videoid="saOOtACCLOM" playlabel="Play: The Last Tale of Gods at War"></lite-youtube>
       </div>
     </div>
     <div class="col-md-7">
@@ -203,5 +205,20 @@
 </div>
 </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
   </body>
+  <script>
+   /*function removeElementsByClass(className) {
+        let elements = document.getElementsByClassName(className);
+        while(elements.length > 0) {
+            elements[0].parentNode.removeChild(elements[0]);
+        }
+    }
+    const iframe = document.getElementById("test_loader");
+    iframe.addEventListener("load", function() {
+    console.log("Finish");
+    removeElementsByClass('ytp-title-channel-logo');
+    });*/
+    
+</script>
 </html>

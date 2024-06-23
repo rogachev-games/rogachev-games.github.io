@@ -41,3 +41,7 @@ b, strong {
 p.lead {
     font-size: 1.2rem;
 }
+.ytp-title-channel-logo {
+    display: none !important;
+    background-image: none !important;
+}
