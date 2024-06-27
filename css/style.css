@@ -45,7 +45,7 @@ p.lead {
     display: none !important;
     background-image: none !important;
 }
-.bi-pen-giant {
+.bi-header-giant {
     color: #433ffc;
     font-size: 7rem;
 }
@@ -58,4 +58,14 @@ li {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     color: #8b8b8b;
+}
+.full-round {
+    border-radius: 100%;
+}
+.contact-me {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 1rem;
+    margin: .5rem;
+    color: #433ffc;
 }
