@@ -45,3 +45,17 @@ p.lead {
     display: none !important;
     background-image: none !important;
 }
+.bi-pen-giant {
+    color: #433ffc;
+    font-size: 7rem;
+}
+li {
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+}
+.blockquote-footer {
+    margin-top: -0.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #8b8b8b;
+}
