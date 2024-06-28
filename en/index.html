@@ -1,121 +1,369 @@
 <!doctype html>
-<html lang="ru" data-bs-theme="dark" data-lt-installed="true">
-  <head>
+<html lang="en" data-bs-theme="dark" data-lt-installed="true">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yaroslav Rogachev</title>
+    <meta name="yandex-verification" content="294f26246aef5eca" />
+    <meta name="google-site-verification" content="wV6p1NkEowcaSE9nH4chiw3F3h_SoFqNtJ3w1U0iWDY" />
+    <title>Yaroslav Rogachev - Game Designer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../src/lite-yt-embed.css" />
+    <script src="../src/lite-yt-embed.js"></script>
 </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-primary">
+    <nav id="my_navbar" class="navbar navbar-expand-lg bg-primary fixed-top">
       <div class="container-xl px-4">
-        <a class="navbar-brand" href="#">Rogachev GD</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <a class="navbar-brand" href="#"><i class="bi bi-controller"></i> Rogachev GD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Обо мне</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Скиллы</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Мои проекты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Нарратив</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Документация</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Контакты</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#narrative">Narrative</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#documents">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#graphics">3D</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacts</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mt-4 mb-2 mb-lg-0 d-md-flex d-lg-none">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">RU</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link active">EN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../"> | RU</a>
+                </li>
+            </ul>
         </div>
       </div>
     </nav>
   <main>
-  <div class="container-xl px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-md-6">
-        <img src="/img/upic.png" class="d-block mx-auto img-fluid" alt="Yaroslav Rogachev" width="320" height="320" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <p class="h2 py-4">Привет!</p>
-        <p class="h2 py-4">Меня зовут <strong>Ярослав Рогачев</strong>, <br /> я геймдизайнер и инди-разработчик.</p>
-        <p class="py-4"><strong>Я люблю</strong> разрабатывать, разбирать, собирать, полировать, развивать, проходить, изучать, забрасывать, покупать, возвращать и советовать <strong>игры</strong>.</p>
-      </div>
-  </div>
-  <div class="row flex-lg-row align-items-center g-5 py-5">
-    <div class="col-lg-6">
-      <p class="h2 py-4">Хотите узнать больше о моем опыте?</p>
-      <p>— Посмотрите <a target="_blank" href="https://drive.google.com/file/d/1g_ESiWxyW_SPKNBk6HDrvCPOpzJJFpUJ/view?usp=sharing">мое резюме!</a></p>
+      <div class="container-xl px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-md-6">
+                  <img src="../img/upic.png" class="d-block mx-auto img-fluid" alt="Yaroslav Rogachev" width="320" height="320" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                  <p class="h2 py-4">Hello!</p>
+                  <p class="h2 py-4">My name is <strong>Yaroslav Rogachev</strong>, <br /> I’m a game designer and indie developer.</p>
+                  <p class="py-4"><strong>I love </strong>to develop, analyze, collect, polish, evolve, play, study, abandon, buy, return and recommend <strong> games</strong>.</p>
+              </div>
+          </div>
+          <div class="row flex-lg-row align-items-center g-5 py-5">
+              <div class="col-lg-6">
+                  <p id="contact" class="h2 py-4">Want to learn more about me?</p>
+                
+                  <p>— Check out <a target="_blank" class="btn btn-primary" href="https://drive.google.com/file/d/1PkM4YKaxLVJ8i7XUAz34E2wNIAi488kw/view?usp=sharing"><i class="bi bi-box-arrow-up-right"></i> my resume</a></p>
 
-      <p class="h2 py-4">Есть интересный проект? Пишите!</p>
-      <p>— На почту: <a target="_blank" href="mailto:rogachev.gd@gmail.com">rogachev.gd@gmail.com</a></p>
-      <p>— В телеграм: <a target="_blank" href="https://t.me/kapodastrs">@kapodastrs</a></p>
-    </div>
-  </div>
-  <div class="row g-5 mt-5 justify-content-center">
-    <div class="col-lg-2">
-      <h1 class="h2">Обо мне</h1>
-    </div>
-    <div class="col-lg-6">
-      <p>Бывший предприниматель из Санкт-Петербурга, который решился перевернуть свою жизнь.</p>
-      <p>Теперь я фрилансер, геймдизайнер и инди-разработчик. Обладаю экспертизой в разработке игр для ПК и мобильных платформ. Люблю технический и системный дизайн, создание миров и порядок в балансе. Консультировал студентов по курсам "Продвинутый геймдизайн", "Сюжетные игры", "Предпродакшен игрового проекта" "Баланс и экономика" и "Unreal Engine Blueprints".</p>
-      <p>Имею высшее образование по специальности "Бизнес-информатика", официальную квалификацию геймдизайнера и награду в области трехмерной графики.</p>
-      <p>Я всегда в поиске новых и интересных проектов. Если вы считаете, что это о вас, отправьте мне электронное письмо! ✉️</p>
-      <p>Если у вас есть еще какие-либо вопросы не стесняйтесь обращаться!</p>
-    </div>
-  </div>
-  <div class="row g-5 mt-5 justify-content-center">
-    <div class="col-lg-2">
-      <h1 class="h2">Скиллы</h1>
-    </div>
-    <div class="col-lg-6">
-      <p><strong>Основные:</strong> Геймдизайн, Игровой баланс, Нарративный дизайн</p>
-      <p><strong>Второстепенные:</strong> UI/UX, 3D-графика, саунд-дизайн</p>
-      <p><strong>Инструменты:</strong> Unreal Engine, Unity, 3Ds Max, ZBrush, Substance Painter, Marmoset Toolbag, Adobe Photoshop, Figma, Ableton Live!, Git, Jira, Trello, Confluence</p>
-    </div>
-  </div>
-  <div class="row g-5 mt-5 justify-content-center">
-    <div class="col-12">
-      <h1 class="h2">Проекты с моим участием</h1>
-    </div>
-    <section class="row flex-md-row-reverse py-5">
-      <div class="col-md-6">
-        <img class="img-fluid mx-auto d-block mb-4" src="/img/warmongers.jpg" alt="Warmongers">
-      </div> 
-      <div class="col-md-6">
-        <h2 class="h3 mb-4">Warmongers, <a href="https://store.steampowered.com/app/2495830/Warmongers/" target="_blank">Steam</a></h2>
-        <p>Экшн от первого лица с элементами стелс и головоломки. Главный герой может уменьшаться, на чем будет построена большая часть геймплея.</p>
-        <p><b>Мои задачи:</b> Game Vision, core-механики, дизайн квестов, координация работы команды.</p>
-        <p><b>Команда:</b> 4 Unity-разработчика, 2 геймдизайнера, нарративный дизайнер</p>
+                  <p class="h2 py-4">Have an interesting project? Write to me!</p>
+                  <a target="_blank" class="btn mb-4 contact-me contact-me-first contact-me-small" href="https://www.linkedin.com/in/yaroslav-rogachev-3392bba3/"><i class="bi bi-linkedin"></i></a>
+                  <a target="_blank" class="btn mb-4 contact-me contact-me-small" href="https://t.me/kapodastrs"><i class="bi bi-telegram"></i></a>
+                  <a target="_blank" class="btn mb-4 contact-me contact-me-small" href="https://wa.me/79313124687?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21%20%D0%A3%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%21"><i class="bi bi-whatsapp"></i></a>
+                  <a target="_blank" class="btn mb-4 contact-me contact-me-small" href="mailto:rogachev.gd@gmail.com"><i class="bi bi-envelope"></i></a>
+              </div>
+          </div>
+          <div id="about" class="row g-5 mt-5 justify-content-center" data-bs-spy="scroll" data-bs-target="#my_navbar" data-bs-root-margin="0px 0px -20%">
+              <div class="col-lg-2">
+                  <h1 class="h2">About me</h1>
+              </div>
+              <div class="col-lg-6">
+                  <p>A former entrepreneur from Saint Petersburg who decided to turn his life around.</p>
+                  <p>Now I am a freelancer, game designer, and indie developer. I have expertise in developing games for PC and mobile platforms. I love technical and systems design, world-building, and balance order. I have consulted students on courses such as "Advanced Game Design," "Narrative Games," "Game Project Pre-production," "Balance and Economy," and "Unreal Engine Blueprints."</p>
+                  <p>I have a higher education degree in "Business Informatics," an official qualification as a game designer, and an award in 3D graphics.</p>
+                  <p>I am always looking for new and interesting projects. If you think this describes you, send me an email! ✉️</p>
+                  <p>If you have any other questions, feel free to reach out!</p>
+              </div>
+          </div>
+          <div id="skills" class="row g-5 mt-5 justify-content-center">
+              <div class="col-lg-2">
+                  <h1 class="h2">Skills</h1>
+              </div>
+              <div class="col-lg-6">
+                  <p><strong>Primary:</strong> Game Design, Game Balance, Narrative Design</p>
+                  <p><strong>Secondary:</strong> UI/UX, 3D-Graphics, Sound Design</p>
+                  <p><strong>Tools:</strong> Unreal Engine, Unity, 3Ds Max, ZBrush, Substance Painter, Marmoset Toolbag, Adobe Photoshop, Figma, Ableton Live!, Git, Jira, Trello, Confluence</p>
+              </div>
+          </div>
+          <div id="projects" class="row g-5 mt-5 justify-content-center">
+              <div class="col-12">
+                  <h1 class="h2">Projects</h1>
+              </div>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-5">
+                      <img class="img-fluid mx-auto d-block mb-4 w-100" src="../img/warmongers.jpg" alt="Warmongers">
+                  </div>
+                  <div class="col-md-7">
+                      <h2 class="h3 mb-4">Warmongers <a href="https://store.steampowered.com/app/2495830/Warmongers/" class="btn btn-primary" target="_blank"><i class="bi bi-steam"></i> Steam</a></h2>
+                      <p>Turn-based strategy game with roguelike elements for PC</p>
+                      <p><b>My tasks:</b> Combat system, balance, unit development</p>
+                      <p><b>Team:</b> 8 people</p>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-5">
+                      <img class="img-fluid mx-auto d-block mb-4 w-100" src="../img/steam.jpg" alt="Steam City">
+                  </div>
+                  <div class="col-md-7">
+                      <h2 class="h3 mb-4">Steam City <a href="https://play.google.com/store/apps/details?id=com.rbx.steamcity.android&hl=en" class="btn btn-primary" target="_blank"><i class="bi bi-google-play"></i></a> <a href="https://apps.apple.com/ru/app/steam-city-%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B9-%D1%81%D0%B2%D0%BE%D0%B9-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4/id6448172311" class="btn btn-primary" target="_blank"><i class="bi bi-apple"></i></a></h2>
+                      <p>City-building simulator in a steampunk setting for mobile platforms and PC</p>
+                      <p><b>My tasks:</b> Full support of new mechanics from concept to release, systems design, balance (core; meta)</p>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-5">
+                      <div class="ratio ratio-16x9 mb-4 w-100">
+                          <lite-youtube class="mb-4" videoid="JcLz5d3xcTA" playlabel="Play: All-Size Adventure"></lite-youtube>
+                      </div>
+                  </div>
+                  <div class="col-md-7">
+                      <h2 class="h3 mb-4">All-Size Adventure</h2>
+                      <p>Pet project in development for PC and consoles.</p>
+                      <p>First-person action game with stealth and puzzle elements. The main character can shrink, which is a key feature of the gameplay.</p>
+                      <p><a href="https://docs.google.com/presentation/d/1z3w388E0BpSVFuQOOwZY4Jp1ArdUwtPN3bvix7RAO_c/edit?usp=sharing" class="btn btn-primary" target="_blank"><i class="bi bi-box-arrow-up-right" "></i> Presentation</a></p>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-5">
+                      <div class="ratio ratio-16x9 mb-4 w-100">
+                          <lite-youtube class="mb-4" videoid="saOOtACCLOM" playlabel="Play: The Last Tale of Gods at War"></lite-youtube>
+                      </div>
+                  </div>
+                  <div class="col-md-7">
+                      <h2 class="h3 mb-4">The Last Tale of Gods at War <a href="https://kapodastr.itch.io/the-last-tale-of-gods-at-war" class="btn btn-primary" target="_blank"><i class="bi bi-play-fill"></i> Play on Itch.io</a></h2>
+                      <p>Game for the Epic MegaJam</p>
+                      <p>Experimental hybrid of Auto Battler/Chess and Card Game, where gods battle in the heavens, and all their actions affect ordinary people on earth.</p>
+                      <p><b>My tasks:</b> Game vision, core mechanics, level design, asset selection and integration (models, materials, sounds, etc.)</p>
+                      <p><b>Team:</b> UE developer, 2 game designers, narrative designer</p>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-5">
+                      <img class="img-fluid mx-auto d-block mb-4 w-100" src="../img/cursed.png" alt="Cursed City">
+                  </div>
+                  <div class="col-md-7">
+                      <h2 class="h3 mb-4">Cursed City</h2>
+                      <p>Prototype</p>
+                      <p>Narrative sandbox where the player is the cursed city itself. This abandoned place attracts adventurers seeking gold and glory. The player must help adventurers (or hinder and torment them), unlock new areas and abilities, and ultimately uncover what is happening here.</p>
+                      <p><b>My tasks:</b> Game vision, core mechanics, quest design, team coordination.</p>
+                      <p><b>Team:</b> 4 Unity developers, 2 game designers, narrative designer</p>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-5">
+                      <img class="img-fluid mx-auto d-block mb-4 w-100" src="../img/crawler.png" alt="Crawler">
+                  </div>
+                  <div class="col-md-7">
+                      <h2 class="h3 mb-4">Untitled Crawler</h2>
+                      <p>Prototype</p>
+                      <p>Dungeon crawler with procedurally generated levels, adventurer team management, semi-automatic combat system, and much more.</p>
+                      <p><b>My tasks:</b> Game balance, combat design</p>
+                      <p><b>Team:</b> 3 Unity developers, 2 game designers</p>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-5">
+                      <img class="img-fluid mx-auto d-block mb-4 w-100" src="../img/darkest.png" alt="Darkest Disciples">
+                  </div>
+                  <div class="col-md-7">
+                      <h2 class="h3 mb-4">Darkest Disciples</h2>
+                      <p>Prototype</p>
+                      <p>Game with an innovative 4x4 turn-based combat system. Each unit has unique skills. Some abilities trigger neighboring friendly units' abilities. The player must aim to achieve a "chain reaction" effect through strategic unit selection and placement.</p>
+                      <p><b>My tasks:</b> Game balance, combat design, design of in-game factions</p>
+                      <p><b>Team:</b> Unity developer, 2 game designers</p>
+                  </div>
+              </section>
+          </div>
+          <div id="narrative" class="row g-5 mt-5 justify-content-center">
+              <div class="col-lg-2">
+                  <h1 class="h2">Narrative Design</h1>
+                  <i class="bi bi-pen bi-header-giant d-none d-lg-block"></i>
+              </div>
+              <div class="col-lg-6">
+                  <figure>
+                      <blockquote class="blockquote">
+                          <h2 class="h4">Yo-Yoker</h2>
+                          <img src="../img/yoyok.png" class="img-thumbnail float-start me-4 mb-2" width="200px">
+                          <p>
+                              It turns out that if you attach a thicker line with a convenient grip to a familiar toy, you get an excellent replacement for the old-fashioned garrote (or simply a chokehold).
+                              Professionals, of course, did not use yo-yos, preferring the classics. It gained its main popularity among the youngest layers of the criminal world. Among the "weed," the yo-yo was considered a status symbol, and the design of a specific model played a significant role.
+                          </p>
+                          <p>
+                              <i>Note: Use the yo-yo as a stretch, combining it with an explosive device or mine.</i>
+                          </p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                          Item Description for the game "Unburned"
+                      </figcaption>
+                  </figure>
+                  <h2 class="h4">I write:</h2>
+                  <ul class="mb-4">
+                      <li>Concepts</li>
+                      <li>Settings</li>
+                      <li>Lore texts</li>
+                      <li>Dialogues</li>
+                      <li>Scenarios</li>
+                      <li>Quests</li>
+                      <li>Flavor texts</li>
+                      <li>Item and location descriptions</li>
+                      <li>Twine games</li>
+                  </ul>
+                  <p>Everything is available through links:</p>
+                  <a href="https://docs.google.com/document/d/1fQ9x5aKe-ExeYZvZ5mJ2Xfurzt6Qv5nOebF_Sb-mUlA/edit?usp=sharing" target="_blank" class="btn btn-primary mb-4">Ultimate Narrative Portfolio</a>
+                  <a href="dirt.html" target="_blank" class="btn btn-primary mb-4">Text-based game "Mud"</a>
+              </div>
+          </div>
+          <div id="documents" class="row g-5 mt-5 justify-content-center">
+              <div class="col-lg-2">
+                  <h1 class="h3">Game Documentation</h1>
+                  <i class="bi bi-file-earmark-text bi-header-giant"></i>
+              </div>
+              <div class="col-lg-6">
+                  <h2 class="h4">Game Design Document for Character Anne Lavaux</h2>
+                  <p>Character description, reference board, animations, VFX, audio, history, mechanics, controls</p>
+                  <a target="_blank" class="btn btn-primary mb-4" href="https://drive.google.com/file/d/1kF-ceQ8aIxh2d9X8uB1Wjt1NFtJgE8Xu/view?usp=sharing">View</a>
+
+                  <h2 class="h4 mt-3">Game Design Document for Game Mechanics</h2>
+                  <p>Objectives, references, UX flow, interface mockups, balancing plans, user story, AERM, GANTT and more</p>
+                  <a target="_blank" class="btn btn-primary mb-4" href="https://drive.google.com/file/d/1r7Sib34AggLTjOQMrnNfZquNs5Aa4kbS/view?usp=sharing">View</a>
+
+                  <h2 class="h4 mt-3">Level Design</h2>
+                  <p>Location description, blockmesh, diagrams, mechanics</p>
+                  <a target="_blank" class="btn btn-primary mb-4" href="https://docs.google.com/document/d/1ohZ6Q03rjorPpsDCD1Kwzft3yKf3RLHRt9yVGaaliGk/edit?usp=sharing">View</a>
+
+                  <h2 class="h4 mt-3">Puzzle Design</h2>
+                  <p>Examples of logical and spatial puzzles</p>
+                  <a target="_blank" class="btn btn-primary mb-4" href="https://docs.google.com/presentation/d/1KOdURqyGQiyVqzJDL3h__w5S64d0ua4OXizWzKt--ps/edit?usp=sharing">View</a>
+
+
+              </div>
+          </div>
+          <div id="graphics" class="row g-5 mt-5 justify-content-center">
+              <div class="col-12">
+                  <h1 class="h2">3D-Graphics</h1>
+              </div>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-7">
+                      <div class="ratio ratio-16x9 mb-4 w-100">
+                          <lite-youtube class="mb-4" videoid="1dsrd6fh1LA" playlabel="Old Thrall"></lite-youtube>
+                      </div>
+                  </div>
+                  <div class="col-md-5">
+                      <h2 class="h3 mb-4">Old Thrall</h2>
+                      <ul>
+                          <li>
+                              Sculpting in ZBrush
+                          </li>
+                          <li>Retopology in 3Ds Max</li>
+                          <li>Baking in Marmoset Toolbag</li>
+                      </ul>
+                      <a target="_blank" class="btn btn-primary mb-4" href="https://www.artstation.com/artwork/GX0351">View on Artstation</a>
+
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-7">
+                      <img class="img-fluid mx-auto d-block mb-4 w-100" src="../img/erevolver.png" alt="Warmongers">
+                  </div>
+                  <div class="col-md-5">
+                      <h2 class="h3 mb-4">E-Revolver</h2>
+                      <ul>
+                          <li>Modeling and UV unwrapping - 3Ds Max</li>
+                          <li>Materials - Substance Painter</li>
+                      </ul>
+                      <p class="fs-6 fst-italic">You can use it in your game for free, with attribution</p>
+                      <a target="_blank" class="btn btn-primary mb-4" href="https://sketchfab.com/3d-models/e-revolver-aa9a29269fc2420a9c3b977f30cdd206">View on Sketchfab</a>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-7">
+                      <div class="ratio ratio-16x9 mb-4 w-100">
+                          <lite-youtube class="mb-4" videoid="BuH3D2mx1DE" playlabel="Dagger"></lite-youtube>
+                      </div>
+                  </div>
+                  <div class="col-md-5">
+                      <h2 class="h3 mb-4">Dagger</h2>
+                      <ul>
+                          <li>Sculpting - ZBrush</li>
+                          <li>Retopology and UV unwrapping - 3Ds Max</li>
+                          <li>Baking - Marmoset Toolbag</li>
+                          <li>Materials - Substance Painter</li>
+                      </ul>
+                      <p class="fs-6 fst-italic">You can use it in your game for free, with attribution</p>
+                      <a target="_blank" class="btn btn-primary mb-4" href="https://sketchfab.com/3d-models/short-sword-dagger-fb5778f1354d4968b7a35483c35cf4b7">View on Sketchfab</a>
+                  </div>
+              </section>
+              <section class="row flex-md-row-reverse py-5">
+                  <div class="col-md-7">
+                      <div class="ratio ratio-16x9 mb-4 w-100">
+                          <lite-youtube class="mb-4" videoid="X9XQVmjw9wo" playlabel="Chest"></lite-youtube>
+                      </div>
+                  </div>
+                  <div class="col-md-5">
+                      <h2 class="h3 mb-4">Chest</h2>
+                      <ul>
+                          <li>Base creation for sculpting - 3Ds Max</li>
+                          <li>Sculpting - ZBrush</li>
+                      </ul>
+                      <a target="_blank" class="btn btn-primary mb-4" href="https://www.artstation.com/artwork/rROVRO">View on Artstation</a>
+                  </div>
+              </section>
+          </div>
+            <div class="row g-5 mt-5 justify-content-center">
+                <div class="col-12 text-center mb-4 pb-4">
+                    <h1 class="mb-4">Contact me in any convenient way:</h1>
+                    <a target="_blank" class="btn mb-4 contact-me" href="https://www.linkedin.com/in/yaroslav-rogachev-3392bba3/"><i class="bi bi-linkedin"></i></a>
+                    <a target="_blank" class="btn mb-4 contact-me" href="https://t.me/kapodastrs"><i class="bi bi-telegram"></i></a>
+                    <a target="_blank" class="btn mb-4 contact-me" href="https://wa.me/79313124687?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21%20%D0%A3%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%21"><i class="bi bi-whatsapp"></i></a>
+                    <a target="_blank" class="btn mb-4 contact-me" href="mailto:rogachev.gd@gmail.com"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
       </div>
-  </section>
-  <section class="row flex-md-row-reverse py-5">
-    <div class="col-md-6">
-      <img class="img-fluid mx-auto d-block mb-4" src="/img/steam.jpg" alt="Warmongers">
-    </div>
-    <div class="col-md-6">
-      <h2 class="h3 mb-4">Steam City, <a href="https://play.google.com/store/apps/details?id=com.rbx.steamcity.android&hl=en" target="_blank">Google Play</a>, <a href="https://store.steampowered.com/app/2495830/Warmongers/" target="_blank">App Store</a></h2>
-      <p>Экшн от первого лица с элементами стелс и головоломки. Главный герой может уменьшаться, на чем будет построена большая часть геймплея.</p>
-      <p><b>Мои задачи:</b> Game Vision, core-механики, дизайн квестов, координация работы команды.</p>
-      <p><b>Команда:</b> 4 Unity-разработчика, 2 геймдизайнера, нарративный дизайнер</p>
-    </div>
-  </section>
-  </div>
-</div>
 </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
   </body>
+  <script>
+   /*function removeElementsByClass(className) {
+        let elements = document.getElementsByClassName(className);
+        while(elements.length > 0) {
+            elements[0].parentNode.removeChild(elements[0]);
+        }
+    }
+    const iframe = document.getElementById("test_loader");
+    iframe.addEventListener("load", function() {
+    console.log("Finish");
+    removeElementsByClass('ytp-title-channel-logo');
+    });*/
+    
+</script>
 </html>
